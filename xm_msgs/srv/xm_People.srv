@@ -1,0 +1,5 @@
+int32 command
+int32 send_id
+---
+int32 receive_id
+geometry_msgs/PointStamped[] pos_person

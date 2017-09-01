@@ -1,0 +1,8 @@
+
+uint8 mod
+geometry_msgs/PointStamped position
+float64 width
+
+---
+bool complete
+

@@ -1,0 +1,6 @@
+bool command    #true: close  false: open
+
+---
+
+bool result 
+string message

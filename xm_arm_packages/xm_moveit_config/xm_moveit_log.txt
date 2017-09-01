@@ -1,0 +1,20 @@
+
+1.group设置细节
+Collection of Joints
+
+A group can be specified as a collection of joints. All the child links of each joint are automatically included in the group.
+Collection of Links
+
+A group can also be specified as a collection of links. All the parent joints of the links are also included in the group.
+Serial Chain
+
+A serial chain is specified using the base link and the tip link. The tip link in a chain is the child link of the last joint in the chain. The base link in a chain is the parent link for the first joint in the chain. 
+
+2.end-effector 设置注意
+its important to make sure that there are no common links between the end-effector and the parent group it is connected to. 
+
+3.控制器action接口和server接口是通过moveit的已有插件把运动规划转换为机器人能接受的消息类型(如:grippercommandaction等),所以要使用自己写的接口就需要再实现插件
+
+4. The KDL kinematics plugin currently only works with serial chains.
+
+这个文件夹下有两个.rviz文件，注意如果要显示机械爪抓取的物品，必须使用attached_object.rviz

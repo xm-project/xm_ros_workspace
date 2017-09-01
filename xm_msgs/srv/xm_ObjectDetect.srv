@@ -1,0 +1,5 @@
+string object_name
+int32 people_id
+
+---
+xm_msgs/xm_Object[] object

@@ -1,0 +1,28 @@
+<launch>
+  <arg
+    name="model" />
+  <arg
+    name="gui"
+    default="true" />
+
+  <param
+    name="robot_description"
+    textfile="$(find xm_urdf)/robots/xm_new_arm.urdf" />
+  <param
+    name="use_gui"
+    value="$(arg gui)" />
+  <!--<rosparam param="Plus2" file="$(find xm_urdf)/param/zero.yaml"/>-->
+   <node
+    name="joint_state_publisher"
+    pkg="joint_state_publisher"
+    type="joint_state_publisher" /> 
+  <node
+    name="robot_state_publisher"
+    pkg="robot_state_publisher"
+    type="state_publisher" />
+  <node
+    name="rviz"
+    pkg="rviz"
+    type="rviz"
+    args="-d $(find xm_urdf)/urdf.rviz" />
+</launch>

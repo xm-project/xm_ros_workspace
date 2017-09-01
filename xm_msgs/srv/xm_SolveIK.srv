@@ -1,0 +1,6 @@
+geometry_msgs/PointStamped goal
+---
+bool result
+float64[] solution
+string message
+

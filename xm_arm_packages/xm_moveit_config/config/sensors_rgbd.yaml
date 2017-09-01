@@ -1,0 +1,16 @@
+sensors:
+# The name of the plugin that we are using.
+  - sensor_plugin: occupancy_map_monitor/PointCloudOctomapUpdater
+# This specifies the topic to listen on for a point cloud. 
+    point_cloud_topic: /camera/depth_registered/points
+# (in m) Points further than this will not be used.
+    max_range: 2.0
+#  
+    frame_subsample: 1
+# Choose one of every point_subsample points.
+    point_subsample: 1
+# The size of the padding (in cm).
+    padding_offset: 0.1
+# The topic on which the filtered cloud will be published (mainly for debugging). The filtering cloud is the resultant cloud after self-filtering has been performed.
+    padding_scale: 1.0
+    filtered_cloud_topic: filtered_cloud

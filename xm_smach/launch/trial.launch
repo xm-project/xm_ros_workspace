@@ -1,0 +1,8 @@
+<launch>
+<node name="xm_find_object" pkg="xm_smach" type="xm_find_object.py" />
+<node name="xm_follow" pkg="xm_smach" type="xm_follow.py" />
+<node name="xm_people_reco" pkg="xm_smach" type="xm_people_reco.py" />
+<node name="xm_speech_meaning" pkg="xm_smach" type="xm_speech_meaning.py" />
+</launch>
+
+

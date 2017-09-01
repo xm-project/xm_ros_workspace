@@ -1,0 +1,6 @@
+<package>
+  <description brief="xm_urdf">xm_urdf</description>
+  <depend package="gazebo" />
+  <author>luoyiyan</author>
+  <license>BSD</license>
+</package>

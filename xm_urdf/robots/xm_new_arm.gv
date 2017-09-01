@@ -1,0 +1,35 @@
+digraph G {
+node [shape=box];
+"base_footprint" [label="base_footprint"];
+"base_link" [label="base_link"];
+"lifting_link" [label="lifting_link"];
+"waist_link" [label="waist_link"];
+"big_arm_link" [label="big_arm_link"];
+"fore_arm_link" [label="fore_arm_link"];
+"wrist_link" [label="wrist_link"];
+"gripper_link" [label="gripper_link"];
+"left_finger_link" [label="left_finger_link"];
+"right_finger_link" [label="right_finger_link"];
+"laser_link" [label="laser_link"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"base_footprint" -> "Joint_base" [label="xyz: -0.127 0 0 \nrpy: 0 -0 0"]
+"Joint_base" -> "base_link"
+"base_link" -> "Joint_lifting" [label="xyz: -0.04667 -0.00040146 0.36209 \nrpy: 1.5277e-33 -0 0"]
+"Joint_lifting" -> "lifting_link"
+"lifting_link" -> "Joint_waist" [label="xyz: 0.136 0 0.195 \nrpy: 1.5277e-33 -0 0"]
+"Joint_waist" -> "waist_link"
+"waist_link" -> "Joint_big_arm" [label="xyz: 0.13033 0 0.15227 \nrpy: 1.5277e-33 -0 0"]
+"Joint_big_arm" -> "big_arm_link"
+"big_arm_link" -> "Joint_fore_arm" [label="xyz: 0.35 0.0005 0 \nrpy: 1.5277e-33 -0 0"]
+"Joint_fore_arm" -> "fore_arm_link"
+"fore_arm_link" -> "Joint_wrist" [label="xyz: 0.25 0 0 \nrpy: 1.5277e-33 -0 0"]
+"Joint_wrist" -> "wrist_link"
+"wrist_link" -> "Joint_gripper" [label="xyz: 0.25 0 0 \nrpy: 0 -0 0"]
+"Joint_gripper" -> "gripper_link"
+"wrist_link" -> "Joint_left_finger" [label="xyz: 0.196 0.044912 0.0015 \nrpy: 1.5277e-33 -0 0"]
+"Joint_left_finger" -> "left_finger_link"
+"wrist_link" -> "Joint_right_finger" [label="xyz: 0.196 -0.044912 0.0015 \nrpy: 1.5277e-33 -0 0"]
+"Joint_right_finger" -> "right_finger_link"
+"base_footprint" -> "Joint_laser" [label="xyz: 0.073 0 0 \nrpy: 0 -0 0"]
+"Joint_laser" -> "laser_link"
+}

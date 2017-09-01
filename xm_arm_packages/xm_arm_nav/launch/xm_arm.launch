@@ -1,0 +1,20 @@
+  <launch>
+  <!--<node
+    name="xm_pick_or_place"
+    pkg="xm_arm_nav"
+    type="xm_pick_or_place.py"
+    output="screen"
+  />-->
+  <node
+    name="obstacles_gen"
+    pkg="xm_arm_nav"
+    type="obstacles_gen.py"
+    output="screen"    
+  />
+  <node
+    name="xm_ik_server"
+    pkg="xm_arm_nav"
+    type="xm_arm_ik_server"
+    output="screen"
+  />
+</launch>

@@ -1,0 +1,6 @@
+string name
+float64[] size
+float64[] locate
+uint8 deal_method
+---
+bool result

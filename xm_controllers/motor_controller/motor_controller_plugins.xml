@@ -1,0 +1,9 @@
+<library path="lib/libmotor_controller">
+
+  <class name="motor_controller/MotorController" type="motor_controller::MotorController" base_class_type="controller_interface::ControllerBase">
+    <description>
+     motor_controller for xm_robot, now we only want to control the plat motor.
+    </description>
+  </class>
+     
+</library>

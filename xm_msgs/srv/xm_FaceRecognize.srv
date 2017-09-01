@@ -1,0 +1,7 @@
+string command
+string name
+
+---
+bool result
+string[] message
+geometry_msgs/PointStamped[] pos

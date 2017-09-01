@@ -1,0 +1,22 @@
+<launch>
+<!-- Load the URDF/Xacro model of your robot -->
+<arg name="urdf_file" default="$(find
+XM_3_URDF_2)/robots/XM_URDF_1.urdf" />
+<param name="robot_description" textfile="$(arg urdf_file)" />
+<!-- Publish the robot state -->
+<node name="robot_state_publisher" pkg="robot_state_publisher"
+type="state_publisher">
+<param name="publish_frequency" value="20.0"/>
+</node>
+<!-- Provide simulated control of the robot joint angles -->
+<node name="joint_state_publisher" pkg="joint_state_publisher"
+type="joint_state_publisher">
+<param name="use_gui" value="True" />
+<param name="rate" value="20.0"/>
+</node>
+<node
+    name="rviz"
+    pkg="rviz"
+    type="rviz"
+    args="-d $(find XM_3_URDF_2)/urdf.rviz" />
+</launch>

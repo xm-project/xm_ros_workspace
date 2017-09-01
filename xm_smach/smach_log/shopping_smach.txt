@@ -1,0 +1,15 @@
+shopping smach :
+1.follow  for 4 times:
+    follow->remember location->remember thing
+2.follow to bar
+    follow->remember location
+3.go for catch for 3 times
+    speech_recon->move_base to related location->pick thing->return bar->give?
+4.end
+
+shopping score:
+1.follow to location 4*50
+2.move_base to location 3*100
+3.succeed to grasp thing 3*100
+4.return to bar 100
+5.if xm can grasp thing from at least 2 different height 100

@@ -1,0 +1,9 @@
+we will divide the gpsr smach into belowing meta-smach:
+1.enter-room (have been tested in whoiswho-test)
+2.task-get
+3.sm-find(include find_people and find_thing)
+3.sm-follow
+4.sm-go
+5.sm-talk
+6.sm-place
+7.sm-grasp

@@ -1,0 +1,22 @@
+smach:
+1.enter the door and 介绍自己
+2.guests tell robot who is who and what they want 5 guests
+3.robot retell the name and thing it understands
+4.if failed understands, robot can ask again
+5.nav to pick the thing
+6.return to last room ,give the thing they want
+7.ask whether meet their need
+8.wancheng all tasks ,go out
+face recognize interface:
+service /get_position
+node xm_vision/image_test
+srv xm_ObjectDetect
+if use for face recognize:
+the req.object_name ="people_position"
+    req.name_id =-1 remember all the people_position
+    req.name_id =0,1,2,3,4 return the specified person position
+the res.state =0 :正常
+               -1 ：再次调用
+               -2：训练出错，跳过
+               -3：左转；
+               -4：右转

@@ -1,0 +1,9 @@
+<library path="lib/libgripper_controller">
+
+  <class name="gripper_controller/GripperController" type="gripper_controller::GripperController" base_class_type="controller_interface::ControllerBase">
+    <description>
+     gripper for xm_robot
+    </description>
+  </class>
+     
+</library>

@@ -1,0 +1,13 @@
+int32 command
+
+---
+int32 gender
+int32 male_num
+int32 female_num
+int32 male_num_standing
+int32 female_num_standing
+int32 male_num_sitting
+int32 female_num_sitting
+int32 num_standing
+int32 num_sitting
+

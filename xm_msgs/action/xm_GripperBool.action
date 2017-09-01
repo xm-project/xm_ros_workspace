@@ -1,0 +1,8 @@
+#goal defin
+bool goal_bool
+---
+#result defin
+bool result_bool
+---
+#feedback defin
+bool feedback_bool

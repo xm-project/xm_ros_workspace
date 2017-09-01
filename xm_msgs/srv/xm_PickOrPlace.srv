@@ -1,0 +1,6 @@
+uint8 action #0 init 1pick 2place 3prepare_nav
+geometry_msgs/PointStamped goal_position
+---
+bool result
+string message
+
